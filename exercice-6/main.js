@@ -1,6 +1,6 @@
 let lancementOk = false;
 let niveauDeCarburant = 17000;
-let statutEquipage  = true;
+let statutEquipage = true;
 let computerStatus = 'vert';
 
 if (niveauDeCarburant >= 20000) {
@@ -11,7 +11,7 @@ if (niveauDeCarburant >= 20000) {
 	lancementOk = false;
 }
 
-if (statutEquipage  && computerStatus === 'vert'){
+if (statutEquipage && computerStatus === 'vert' && lancementOk) {
 	console.log('Equipage et ordinateur approuvés.');
 	lancementOk = true;
 } else {
